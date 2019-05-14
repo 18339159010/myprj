@@ -55,7 +55,7 @@ export default {
   async getShops ({commit, state}) {
     const {latitude, longitude} = state
     // 发送异步ajax请求
-    const result = await reqShops(state)
+    const result = await reqShops(latitude, longitude)
     // 提交一个mutation
     if (result.code === 0) {
       const shops = result.data
