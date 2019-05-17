@@ -99,6 +99,7 @@ export default {
         }, 100) */
       this.$nextTick(() => { // 一旦完成界面更新, 立即调用(此条语句要写在数据更新之后)
         // 创建一个Swiper实例对象, 来实现轮播
+        // eslint-disable-next-line no-new
         new Swiper('.swiper-container', {
           loop: true, // 可以循环轮播
           // 如果需要分页器

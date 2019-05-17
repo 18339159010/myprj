@@ -5,7 +5,7 @@
               :key="index" @click="$router.push('/shop')">
                 <a>
                   <div class="shop_left">
-                    <img class="shop_img" :src="baseImgUrl+shop.image_path">
+                    <img class="shop_img" :src="shop.image_path">
                   </div>
                   <div class="shop_right">
                     <section class="shop_detail_header">
@@ -42,7 +42,7 @@
             </ul>
 
             <ul v-else>
-              <li v-for="item in 6">
+              <li v-for="(item,index) in 6" :key="index">
                 <img src="./images/shop_back.svg" alt="back">
               </li>
             </ul>

@@ -105,6 +105,7 @@ export default {
       // 前台表单验证
       if (this.loginWay) {
         // 短信登录
+        // eslint-disable-next-line no-unused-vars
         const {rightPhone, phone, code} = this
         if (!this.rightPhone) {
           // 手机号不正确
@@ -115,6 +116,7 @@ export default {
           // return
         }
       } else { // 密码登录
+        // eslint-disable-next-line no-unused-vars
         const {name, pwd, captcha} = this
         if (!this.name) {
           // 用户名必须指定

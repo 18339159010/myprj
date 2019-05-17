@@ -14,6 +14,7 @@
 
 <script>
 // import tabbar from './components/tabbar'
+// eslint-disable-next-line no-unused-vars
 import {reqCategorys} from './api'
 import tabbar from './components/FooterGuide/FooterGuide.vue'
 

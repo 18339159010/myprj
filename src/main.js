@@ -5,6 +5,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import './mock/mockServer.js'// 加载mockServer即可
 // 按需导入mintUI中组件
 import { Header, Swipe, SwipeItem } from 'mint-ui'
 // 引入css样式
